@@ -528,7 +528,7 @@
             $Country->addChild('IdentificationCode', $musteri_ulke_kodu, $this->xml_ns["cbc"]);
             $Country->addChild('Name', $musteri_ulke, $this->xml_ns['cbc']);
 
-            $PartyTaxScheme = $Party->addChild('PartyTaxScheme', null, $this->xml_ns['cac']);
+            $PartyTaxScheme = $Party->addChild('PartyTaxScheme', $musteri_vergi_dairesi, $this->xml_ns['cac']);
             $TaxScheme      = $PartyTaxScheme->addChild('TaxScheme', null, $this->xml_ns['cac']);
             $TaxScheme->addChild('Name', $musteri_vergi_no, $this->xml_ns['cbc']);
 
